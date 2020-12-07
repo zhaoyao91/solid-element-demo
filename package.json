@@ -1,0 +1,35 @@
+{
+  "name": "solid-element-demo",
+  "version": "0.0.0",
+  "scripts": {
+    "build": "shx rm -rf dist && rollup -c --environment NODE_ENV:production",
+    "dev": "concurrently \"rollup -c --watch\" \"npm:start\"",
+    "start": "serve ."
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.9",
+    "@babel/plugin-proposal-class-properties": "^7.12.1",
+    "@babel/plugin-proposal-object-rest-spread": "^7.12.1",
+    "@babel/preset-env": "^7.12.7",
+    "@babel/preset-typescript": "^7.12.7",
+    "@rollup/plugin-babel": "^5.2.2",
+    "@rollup/plugin-commonjs": "^17.0.0",
+    "@rollup/plugin-node-resolve": "^11.0.0",
+    "babel-preset-solid": "^0.22.9",
+    "concurrently": "^5.3.0",
+    "prettier": "^2.2.1",
+    "rollup": "^2.34.2",
+    "rollup-plugin-livereload": "^2.0.0",
+    "rollup-plugin-terser": "^7.0.2",
+    "serve": "^11.3.2",
+    "shx": "^0.3.3",
+    "typescript": "^4.1.2"
+  },
+  "dependencies": {
+    "solid-element": "^0.23.0",
+    "solid-js": "^0.22.10",
+    "solid-styled-components": "^0.23.0",
+    "solid-styled-jsx": "^0.23.0",
+    "styled-jsx": "^3.3.2"
+  }
+}
